@@ -83,8 +83,8 @@ sudo mkdir -p /mnt/common_volume/grafana/{grafana-config,grafana-data,prometheus
 
    ![image](https://github.com/user-attachments/assets/e06e15eb-3739-4540-b24c-e90f279cefed)
 
-   <b>Вводим логин и пароль
-      Логин: admin
+   <b>Вводим логин и пароль<br>
+      Логин: admin<br>
       Пароль: admin</b>
 
 19.  Попадаем на страницу Home
