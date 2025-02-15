@@ -42,7 +42,7 @@
 10. Клонируем репозиторий с github, где содержится Grafana с помощью команды
 ```git clone https://github.com/skl256/grafana_stack_for_docker.git```
 
-   ![image](https://github.com/user-attachments/assets/aadb5c9c-c6be-48fc-9326-31f590c73be2)
+      ![image](https://github.com/user-attachments/assets/aadb5c9c-c6be-48fc-9326-31f590c73be2)
 
 11. Переходим в директорию с Grafana с помощью команды ```cd grafana_stack_for_docker```
 
