@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/68b2f3e5-09c6-4895-92d8-3e5575a0210e)# LAB1_Установка Docker на Oracle Linux
+# LAB1_Установка Docker на Oracle Linux
 1. Начал с установки пакета <b>wget</b>, используя команду ```sudo yum install wget```, данный пакет даёт возможность загружать файлы из интернета
    
    ![image](https://github.com/user-attachments/assets/81ffa714-132f-4ade-89b9-d72be8018ce7)
