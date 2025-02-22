@@ -1,4 +1,4 @@
-# LAB1_Установка Docker на Oracle Linux
+![image](https://github.com/user-attachments/assets/68b2f3e5-09c6-4895-92d8-3e5575a0210e)# LAB1_Установка Docker на Oracle Linux
 1. Начал с установки пакета <b>wget</b>, используя команду ```sudo yum install wget```, данный пакет даёт возможность загружать файлы из интернета
    
    ![image](https://github.com/user-attachments/assets/81ffa714-132f-4ade-89b9-d72be8018ce7)
@@ -90,6 +90,38 @@ sudo mkdir -p /mnt/common_volume/grafana/{grafana-config,grafana-data,prometheus
 19.  Попадаем на страницу Home
 
    ![image](https://github.com/user-attachments/assets/1cc82851-0cf6-4d1e-9be3-536c447bf71b)
+
+20. Заходим в конфигурационный файл докера с помощью команды ```vi docker-compose.yaml```
+
+    ![image](https://github.com/user-attachments/assets/cb969c40-8734-4f67-8e69-5ed9096bf237)
+
+    ![image](https://github.com/user-attachments/assets/0b1e6b93-8d72-48f9-8bea-bf7393c37ba6)
+
+21. Выходим с конфигурационного  вписав команду ```:wq```
+
+    ![image](https://github.com/user-attachments/assets/fc1388f9-457d-44bb-be68-12fab8454c46)
+
+22. Переходим в директорию с конфигурационным файлом используя команду
+    ```cd grafana_stack_for_docker```
+
+    ![image](https://github.com/user-attachments/assets/5d60d570-cab0-4167-a53b-26b75df3976e)
+
+23. Запускаем grafana используя команду
+    ```sudo docker compose up -d```
+
+    ![image](https://github.com/user-attachments/assets/eb3b7e29-3a9e-4f5e-acf1-d12f51f13d14)
+    
+    ![image](https://github.com/user-attachments/assets/9bbc38c1-f050-4d28-a039-0ea7c9764549)
+
+
+25. Выполняем остановку grafana вписав команду
+    ```sudo docker compose stop```
+    ![image](https://github.com/user-attachments/assets/25c8a171-087a-4a6b-ae4c-848d512dd7f1)
+
+26. Полностью останавливаем grafana используя команду
+    ```sudo docker compose down```
+
+    ![image](https://github.com/user-attachments/assets/773efa09-d67c-4e03-a723-b09c2544b247)
 
 
 
