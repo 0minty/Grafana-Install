@@ -131,7 +131,40 @@ sudo mkdir -p /mnt/common_volume/grafana/{grafana-config,grafana-data,prometheus
 
    ![image](https://github.com/user-attachments/assets/54d81523-a681-4ad0-9f9b-7a482e25c670)
 
+- проверяем что репозиторий успешно установился
+  - используем команду ```ls```
+    
+   ![image](https://github.com/user-attachments/assets/3dc94a69-4af0-42b3-b02b-a2da37696138)
 
+- копируем конфигурационный файл докера в папку с Grafan
+   - используя команду ```cp docker-compose.yaml /home/fedor/grafana_stack_for_docker/```
+
+  ![image](https://github.com/user-attachments/assets/f785d2ab-92c4-4bd2-a40f-720f8513494d)
+
+- тоже самое делаем для конфигурационного файла prometheus
+  - используя команду ```cp prometeus.yaml /home/fedor/grafana_stack_for_docker/```
+
+  ![image](https://github.com/user-attachments/assets/b0667efa-214a-42d2-9309-d587afa18741)
+
+- переименовываем конфигурационный файл с <b>prometeus.yaml</b> на <b>prometheus.yaml</b> (в нем содержалась ошибка в названии)
+   - используя команду ```mv prometeus.yaml prometheus.yaml```
+
+  ![image](https://github.com/user-attachments/assets/60fb8b46-5b4f-4bc1-8304-2234853bbdbf)
+
+- переносим конфигурационный файл prometheus.yaml в конфиг Grafana
+   - используя команду ```mv prometheus.yaml /mnt/common_volume/swarm/grafana/config```
+
+  ![image](https://github.com/user-attachments/assets/19e754b0-0ad2-45f3-b6a9-64961059c518)
+
+   - проверяем наличие файла
+     - используя команду ```ls```
+       
+     ![image](https://github.com/user-attachments/assets/1a9824a7-e572-4fbb-9cb0-c4219961b0b1)
+
+- запускаем docker compose в фоновом режиме
+   - используя команду ```sudo docker compose up -d```
+
+   ![image](https://github.com/user-attachments/assets/2a211f58-898e-45b0-8718-7776d008d7ed)
 
 
 - переходим на сайт ```localhost:3000```
@@ -142,23 +175,37 @@ sudo mkdir -p /mnt/common_volume/grafana/{grafana-config,grafana-data,prometheus
 - в меню выбираем вкладку Dashboards и создаем Dashboard
    - жмем кнопку +Add visualization, а после "Configure a new data source"
    - выбираем Prometheus
-   - Connection
-   - ```http://prometheus:9090```
+     
+     ![image](https://github.com/user-attachments/assets/ed2b6346-c9cd-4086-ac71-c84650a6f264)
+   
+   - Заполняем данные в открывшемся окне
+      
+      - Пункт  Connection
+         - ```http://prometheus:9090```
 
-- Authentication
-   - Basic authentication
-   - User: ```admin```
-   - Password: ```admin```
-   - Нажимаем на Save & test и должно показывать зелёную галочку
+      - Пункт Authentication
+         - Basic authentication
+         - User: ```admin```
+         - Password: ```admin```
+         - Нажимаем на Save & test и должно показывать зелёную галочку
 
 - в меню выбираем вкладку Dashboards и создаем Dashboard
-   - ждем кнопку "Import dashboard"
-   - Find and import dashboards for common applications at grafana.com/dashboards: 1860 //ждем кнопку Load
+   - жмем кнопку "Import dashboard"
+     
+     ![image](https://github.com/user-attachments/assets/59b75269-46b6-4bdb-a7b1-c9c605cc7467)
+
+   - В пункт ```Find and import dashboards for common applications at grafana.com/dashboards:```
+      - вписываем ```1860```
+        
+        ![image](https://github.com/user-attachments/assets/ecdcf92e-4373-4477-a5ed-4249f97cb7fa)
+        
+      - жмем кнопку Load
    - Select Prometheus ждем кнопку "Import"
 
 В итоге открывается такой Dashboard для мониторинга загрузки ОС
 
-![image](https://github.com/user-attachments/assets/7b2e5c2b-9a63-4def-9bca-beb8bceb2cb6)
+![image](https://github.com/user-attachments/assets/9f3b951e-21ec-4236-ab8a-357cfe85efbd)
+
 
 
 
