@@ -125,27 +125,38 @@ sudo mkdir -p /mnt/common_volume/grafana/{grafana-config,grafana-data,prometheus
 
 # Grafana
 
+- копирую конфигурационные файлы с github командой 
+
+   - ```sudo git clone https://github.com/0minty/Grafana-Install.git```
+
+   ![image](https://github.com/user-attachments/assets/54d81523-a681-4ad0-9f9b-7a482e25c670)
+
+
+
+
 - переходим на сайт ```localhost:3000```
-User & Password GRAFANA: ```admin```
-Код графаны: ```3000```
-Код прометеуса: ```http://prometheus:9090```
+   - User & Password GRAFANA: ```admin```
+   - Код графаны: ```3000```
+   - Код прометеуса: ```http://prometheus:9090```
 
-в меню выбираем вкладку Dashboards и создаем Dashboard
-ждем кнопку +Add visualization, а после "Configure a new data source"
-выбираем Prometheus
-Connection
-```http://prometheus:9090```
+- в меню выбираем вкладку Dashboards и создаем Dashboard
+   - жмем кнопку +Add visualization, а после "Configure a new data source"
+   - выбираем Prometheus
+   - Connection
+   - ```http://prometheus:9090```
 
-Authentication
-Basic authentication
-User: ```admin```
-Password: ```admin```
-Нажимаем на Save & test и должно показывать зелёную галочку
+- Authentication
+   - Basic authentication
+   - User: ```admin```
+   - Password: ```admin```
+   - Нажимаем на Save & test и должно показывать зелёную галочку
 
-в меню выбираем вкладку Dashboards и создаем Dashboard
-ждем кнопку "Import dashboard"
-Find and import dashboards for common applications at grafana.com/dashboards: 1860 //ждем кнопку Load
-Select Prometheus ждем кнопку "Import"
+- в меню выбираем вкладку Dashboards и создаем Dashboard
+   - ждем кнопку "Import dashboard"
+   - Find and import dashboards for common applications at grafana.com/dashboards: 1860 //ждем кнопку Load
+   - Select Prometheus ждем кнопку "Import"
+
+В итоге открывается такой Dashboard для мониторинга загрузки ОС
 
 ![image](https://github.com/user-attachments/assets/7b2e5c2b-9a63-4def-9bca-beb8bceb2cb6)
 
