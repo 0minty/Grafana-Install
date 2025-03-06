@@ -1,4 +1,4 @@
-# LAB1_Установка Docker на Oracle Linux
+# Установка Docker на Oracle Linux
 1. Начал с установки пакета <b>wget</b>, используя команду ```sudo yum install wget```, данный пакет даёт возможность загружать файлы из интернета
    
    ![image](https://github.com/user-attachments/assets/81ffa714-132f-4ade-89b9-d72be8018ce7)
