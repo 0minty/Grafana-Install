@@ -123,7 +123,7 @@ sudo mkdir -p /mnt/common_volume/grafana/{grafana-config,grafana-data,prometheus
 
     ![image](https://github.com/user-attachments/assets/773efa09-d67c-4e03-a723-b09c2544b247)
 
-# Grafana
+# Prometheus
 
 - копирую конфигурационные файлы с github командой 
 
