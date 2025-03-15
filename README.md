@@ -1,4 +1,4 @@
-# Установка Docker на Oracle Linux
+![image](https://github.com/user-attachments/assets/a0ab98ab-4d8b-488b-a221-1ce5d5f30a63)# Установка Docker на Oracle Linux
 1. Начал с установки пакета <b>wget</b>, используя команду ```sudo yum install wget```, данный пакет даёт возможность загружать файлы из интернета
    
    ![image](https://github.com/user-attachments/assets/81ffa714-132f-4ade-89b9-d72be8018ce7)
@@ -207,6 +207,40 @@ sudo mkdir -p /mnt/common_volume/grafana/{grafana-config,grafana-data,prometheus
 ![image](https://github.com/user-attachments/assets/9f3b951e-21ec-4236-ab8a-357cfe85efbd)
 
 
+# Victoria
+
+- Вводим команду ```echo -e "# TYPE light_metric1 gauge\nlight_metric1 0" | curl --data-binary @- http://localhost:8428/api/v1/import/prometheus``` которая, отправляет бинарные данные (например, метрики в формате Prometheus) на локальный сервер, который слушает на порту 8428.
+  
+   ![image](https://github.com/user-attachments/assets/56ab401f-7312-41a0-9537-d40299d24bfa)
+
+- Переходим в браузере по ссылке ```http://localhost:8428/```, открывается такое меню в нём нужно выбрать <b>vmui</b>
+
+   ![image](https://github.com/user-attachments/assets/a66e3e16-667e-4577-946a-f2b27bea69ec)
+
+- Вписываем <b>light_metric1</b> и нажимаем <b>Execute Query</b>
+
+  ![image](https://github.com/user-attachments/assets/34cc95dc-826d-4fdd-a3bb-bcec0918aa33)
+
+- Переходим на ```http://localhost:3000``` выбираем Dashboard и нажимаем <b>New Dashboard</b>, далее <b>Add Visualization</b>
+
+  ![image](https://github.com/user-attachments/assets/83076396-3e13-4036-a3f4-67d7aa6d05f1)
+
+- Нажимаем <b>Configure a new data source</b> и выбираем Prometheus
+
+  ![image](https://github.com/user-attachments/assets/44e63d6a-6c24-4348-be0a-1f754c22f3d8)
+
+- Вписываем:
+   - Name: vik
+   - Connection: ```http://victoriametrics:8428```
+   - Нажимаем <b>Save & Test</b>
+ 
+     ![image](https://github.com/user-attachments/assets/27099002-c2b2-4b1f-8592-604e02ffd3ec)
+     
+
+- Вписываем
+  ![image](https://github.com/user-attachments/assets/69c43e8f-5df8-4dfd-8a0a-1aa511ac310c)
+
+![image](https://github.com/user-attachments/assets/79bc6beb-9d7d-4394-a31f-70213ba14cd9)
 
 
 
