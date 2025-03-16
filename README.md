@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/a0ab98ab-4d8b-488b-a221-1ce5d5f30a63)# Установка Docker на Oracle Linux
+# Установка Docker на Oracle Linux
 1. Начал с установки пакета <b>wget</b>, используя команду ```sudo yum install wget```, данный пакет даёт возможность загружать файлы из интернета
    
    ![image](https://github.com/user-attachments/assets/81ffa714-132f-4ade-89b9-d72be8018ce7)
@@ -237,13 +237,16 @@ sudo mkdir -p /mnt/common_volume/grafana/{grafana-config,grafana-data,prometheus
      ![image](https://github.com/user-attachments/assets/27099002-c2b2-4b1f-8592-604e02ffd3ec)
      
 
-- Вписываем
+- Вписываем <b>light_metric1</b>
+
   ![image](https://github.com/user-attachments/assets/69c43e8f-5df8-4dfd-8a0a-1aa511ac310c)
+
+- Выходит панель с графиком, где есть активность <b>light_metric1</b>
 
 ![image](https://github.com/user-attachments/assets/79bc6beb-9d7d-4394-a31f-70213ba14cd9)
 
 
-
+![image](https://github.com/user-attachments/assets/a0ab98ab-4d8b-488b-a221-1ce5d5f30a63)
 
 
 
