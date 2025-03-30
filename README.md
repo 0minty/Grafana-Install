@@ -1,3 +1,8 @@
+Система мониторинга, построенная с использованием Prometheus, Grafana, Alertmanager и Victoria Metrics
+
+![image](https://github.com/user-attachments/assets/7b905a66-83fe-4096-a68e-7d5168d7b371)
+
+
 # Установка Docker на Oracle Linux
 1. Начал с установки пакета <b>wget</b>, используя команду ```sudo yum install wget```, данный пакет даёт возможность загружать файлы из интернета
    
