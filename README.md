@@ -1,4 +1,4 @@
-Система мониторинга, построенная с использованием Prometheus, Grafana, Alertmanager и Victoria Metrics
+<b>Архитектура системы мониторинга с использованием Prometheus, Grafana, Alertmanager и Victoria Metrics</b>
 
 ![image](https://github.com/user-attachments/assets/7b905a66-83fe-4096-a68e-7d5168d7b371)
 
