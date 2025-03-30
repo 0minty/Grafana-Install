@@ -2,6 +2,8 @@
 
 ![image](https://github.com/user-attachments/assets/7b905a66-83fe-4096-a68e-7d5168d7b371)
 
+Схема мониторинга сервисов с Prometheus, Alertmanager и Victoria Metrics, включающая сбор метрик через Node Exporter, хранение данных, визуализацию в Grafana и отправку уведомлений через Telegram и e-mail. Развёртывание выполнено с помощью Docker Compose
+
 
 # Установка Docker на Oracle Linux
 1. Начал с установки пакета <b>wget</b>, используя команду ```sudo yum install wget```, данный пакет даёт возможность загружать файлы из интернета
