@@ -252,7 +252,7 @@ sudo mkdir -p /mnt/common_volume/grafana/{grafana-config,grafana-data,prometheus
 
 ![image](https://github.com/user-attachments/assets/79bc6beb-9d7d-4394-a31f-70213ba14cd9)
 
-
+##Alert Manager
 ![image](https://github.com/user-attachments/assets/a83e1a63-bc09-4683-abee-76dfa64136f0)
 
 ![image](https://github.com/user-attachments/assets/529184ed-a90a-4b87-b588-c33b1e21fc49)
