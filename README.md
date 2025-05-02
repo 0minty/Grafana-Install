@@ -258,5 +258,30 @@ sudo mkdir -p /mnt/common_volume/grafana/{grafana-config,grafana-data,prometheus
 
 ![image](https://github.com/user-attachments/assets/529184ed-a90a-4b87-b588-c33b1e21fc49)
 
+![image](https://github.com/user-attachments/assets/7601d0d3-9d03-456b-ad4a-c855337aa667)
+
+```wget https://github.com/prometheus/prometheus/releases/download/v3.3.0/prometheus-3.3.0.linux-amd64.tar.gz```
+
+![image](https://github.com/user-attachments/assets/54d8d63c-3e86-4777-a07a-05cfcb23aa50)
+
+![image](https://github.com/user-attachments/assets/821415a0-b52f-47f7-bee6-ed9ddb2a1606)
+
+![image](https://github.com/user-attachments/assets/a04d1aaf-cbf9-4ec5-b4fd-8f4bb04b66fe)
+
+![image](https://github.com/user-attachments/assets/f1eb8f56-0c72-40a1-aca2-403f4ccfb5a0)
+
+![image](https://github.com/user-attachments/assets/bfed2552-2094-4cd4-a244-15555895a415)
+
+![image](https://github.com/user-attachments/assets/9fdf1ffb-3404-482f-8a91-e1c608018979)
+
+![image](https://github.com/user-attachments/assets/22bdb7c1-406c-4237-a4a1-b1f124846f6b)
+
+![image](https://github.com/user-attachments/assets/601b71c6-ae6d-4abe-a1a1-1f1620ae93a0)
+
+
+
+
+
+
 
 
